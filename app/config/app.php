@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://laravel.bpt.local',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -113,6 +113,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+        'Socialism\LaravelOpauth\LaravelOpauthServiceProvider',
 
 	),
 
