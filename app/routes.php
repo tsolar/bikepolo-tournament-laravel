@@ -23,6 +23,7 @@ app('opauth')->run();
 }])->where(['strategy' => '.*']);
 
 Route::get('/tournaments', 'TournamentController@getIndex');
+Route::get('/profile', 'ProfileController@getIndex');
 
 Route::post('/lala/lele', function() {
     echo 'hola';
