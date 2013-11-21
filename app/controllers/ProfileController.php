@@ -4,8 +4,8 @@ class ProfileController extends BaseController {
 
     public function getIndex() 
     {
-        //return View::make('hello');
-        var_dump(Auth::user()->email);
+        $user = Auth::user();
+        return View::make('Profile.index')->with('user', $user);
     }
 
 }
