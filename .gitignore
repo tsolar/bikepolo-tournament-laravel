@@ -5,6 +5,7 @@
 /app/config/local
 /app/config/staging
 /app/config/production
+/app/config/packages/socialism/laravel-opauth/config.php
 
 # Basset development collections
 /public/assets/compiled/public
