@@ -1,4 +1,4 @@
-<?php var_dump(Request::segment(1),Request::url(), Request::is('a')); ?>
+<?php // var_dump(Request::segment(1),Request::url(), Request::is('a')); ?>
 <!-- Fixed navbar -->
 <div role="navigation" class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
@@ -51,7 +51,7 @@
                             //}
                             ?>&nbsp;<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/users/profile"><?php echo trans('My profile'); ?></a></li>
+                            <li><a href="/profile"><?php echo trans('My profile'); ?></a></li>
                             <li class="divider"></li>
                             <li><a href="/logout"><?php echo trans('Logout'); ?></a></li>
                         </ul>

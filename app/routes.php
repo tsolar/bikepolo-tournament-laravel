@@ -22,8 +22,8 @@ app('opauth')->run();
 
 }])->where(['strategy' => '.*']);
 
-Route::get('/tournaments', 'TournamentController@getIndex');
-Route::get('/profile', 'ProfileController@getIndex');
+Route::controller('tournaments', 'TournamentController');
+Route::controller('profile', 'ProfileController');
 
 Route::post('/lala/lele', function() {
     echo 'hola';
@@ -44,3 +44,6 @@ Route::get( 'user/reset_password/{token}', 'UserController@reset_password');
 Route::post('user/reset_password',         'UserController@do_reset_password');
 Route::get( 'logout',                      'UserController@logout');
 Route::get( 'user/logout',                 'UserController@logout');
+
+// resources
+Route::resource('teams', 'TeamController');
